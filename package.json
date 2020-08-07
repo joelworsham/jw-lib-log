@@ -1,0 +1,16 @@
+{
+  "name": "jw-lib-log",
+  "version": "1.0.0",
+  "description": "Service for logging to the console.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelworsham/jw-lib-log.git"
+  },
+  "author": "joelworsham@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelworsham/jw-lib-log/issues"
+  },
+  "homepage": "https://github.com/joelworsham/jw-lib-log#readme"
+}
