@@ -1,5 +1,5 @@
 {
-  "name": "jw-lib-log",
+  "name": "@joelworsham/log",
   "version": "1.0.0",
   "description": "Service for logging to the console.",
   "main": "src/index.js",
