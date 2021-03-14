@@ -1,5 +1,7 @@
 const moment = require('moment');
 
+const debugNamespace = process.env.JW_LOG_NAMESPACE;
+
 /**
  * Prepares the message string for logging, adding the namespace prefix and any indentation.
  *
@@ -21,6 +23,6 @@ module.exports = (
 ) => {
   const indentStr = new Array(indent + 1).join(' ');
   const timestampStr = hideTimestamp ? '' : `${moment().format('HH:mm:ss:SSS')} `;
-  const prefixStr = hideNamespace ? '' : `sippable${namespace ? `:${namespace} ` : ''}`;
+  const prefixStr = hideNamespace ? '' : `${debugNamespace}${namespace ? `:${namespace} ` : ''}`;
   return `${timestampStr}${indentStr}${prefixStr} ${message}`;
 };

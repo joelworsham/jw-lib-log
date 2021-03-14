@@ -1,4 +1,5 @@
-const config = require('../config');
+const debug = process.env.DEBUG || '';
+const debugNamespace = process.env.JW_LOG_NAMESPACE;
 
 /**
  * Determines if the namespace passed is in the current DEBUG configuration.
@@ -11,7 +12,7 @@ module.exports = (namespace, strict = false) => (
   // no namespace, always show
   !namespace
   // wildcard/global-namespace
-  || (!strict && ['*', 'sippable'].includes(config.debug))
+  || (!strict && ['*', debugNamespace].includes(debug))
   // current debug mode matches namespace
-  || config.debug.split(',').includes(`sippable:${namespace}`)
+  || debug.debug.split(',').includes(`${debugNamespace}:${namespace}`)
 );

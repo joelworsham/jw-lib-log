@@ -4,10 +4,10 @@ const theme = require('./theme');
 /**
  * Sends a debug message to the log. Will only display if DEBUG has the passed namespace.
  *
- * E.G. sippable:routes
+ * E.G. ep:routes
  *
  * @param {String} message Message text
- * @param {String} namespace Optional namespace to append to `sippable`
+ * @param {String} namespace Optional namespace to append to `ep`
  * @param {Object|Array} json Optional object/array to stringify to JSON and show under message
  * @param {Number} indent Indentation for message
  * @param {Boolean} display If false, will return message, rather than display to console
